@@ -1,0 +1,23 @@
+Date/Time,Event
+2016-08-30 22:07:06,Utility supply normal
+2016-08-30 22:06:46,Utility supply fault
+2016-08-30 22:06:36,Utility supply normal
+2016-08-30 22:06:35,Utility supply fault
+2016-08-30 22:06:20,Test in progress disappeared
+2016-08-30 22:06:06,Test in progress happen
+2016-08-30 22:06:04,Battery test command
+2016-08-30 22:05:28,Test in progress disappeared
+2016-08-30 22:05:15,Test in progress happen
+2016-08-30 22:05:12,Battery test command
+2016-08-30 22:03:18,Test in progress disappeared
+2016-08-30 22:03:03,Test in progress happen
+2016-08-30 22:03:01,Battery test command
+2016-08-30 22:01:51,Test in progress disappeared
+2016-08-30 22:01:38,Test in progress happen
+2016-08-30 22:01:35,Battery test command
+2016-08-30 21:59:56,UPS connected
+2016-08-30 21:59:49,UPS unconnected
+2016-08-30 21:59:36,UPS unconnected
+2016-08-30 21:58:59,UPS unconnected
+2016-08-30 21:58:48,UPS unconnected
+2016-08-30 21:58:12,UPS unconnected
