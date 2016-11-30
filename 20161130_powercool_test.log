@@ -1,0 +1,2064 @@
+https://github.com/zykh/nut/tree/81766eea486f48d5985de7610f2b642a33fa2fcd
+./nutdrv_qx -a powercool -DDDDD -x subdriver=fabula -x vendorid=0001 -x productid=0000 &> ~/powercool.log
+ups.conf:
+[powercool]
+driver = nutdrv_qx
+port = auto
+----------------
+   0.000000	[D5] send_to_all: SETINFO driver.parameter.subdriver "fabula"
+   0.000148	[D5] send_to_all: SETINFO driver.parameter.vendorid "0001"
+   0.000191	[D5] send_to_all: SETINFO driver.parameter.productid "0000"
+   0.000221	[D1] debug level is '5'
+   0.001908	[D1] upsdrv_initups...
+   0.026017	[D2] Checking device (093A/2510) (004/003)
+   0.034707	[D2] - VendorID: 093a
+   0.034798	[D2] - ProductID: 2510
+   0.034826	[D2] - Manufacturer: PixArt
+   0.034852	[D2] - Product: USB Optical Mouse
+   0.034878	[D2] - Serial Number: unknown
+   0.034903	[D2] - Bus: 004
+   0.034930	[D2] - Device release number: 0100
+   0.034955	[D2] Trying to match device
+   0.035053	[D2] Device does not match - skipping
+   0.035112	[D2] Checking device (046E/6782) (004/002)
+   0.050881	[D2] - VendorID: 046e
+   0.050973	[D2] - ProductID: 6782
+   0.051001	[D2] - Manufacturer: BTC
+   0.051027	[D2] - Product: USB Keyboard and Mouse
+   0.051053	[D2] - Serial Number: unknown
+   0.051079	[D2] - Bus: 004
+   0.051105	[D2] - Device release number: 2110
+   0.051131	[D2] Trying to match device
+   0.051176	[D2] Device does not match - skipping
+   0.051225	[D2] Checking device (1D6B/0001) (004/001)
+   0.051458	[D2] - VendorID: 1d6b
+   0.051492	[D2] - ProductID: 0001
+   0.051517	[D2] - Manufacturer: Linux 3.16.0-4-amd64 ohci_hcd
+   0.051543	[D2] - Product: OHCI PCI host controller
+   0.051569	[D2] - Serial Number: 0000:00:12.0
+   0.051594	[D2] - Bus: 004
+   0.051620	[D2] - Device release number: 0316
+   0.051645	[D2] Trying to match device
+   0.051676	[D2] Device does not match - skipping
+   0.051714	[D2] Checking device (1D6B/0003) (003/001)
+   0.051971	[D2] - VendorID: 1d6b
+   0.052004	[D2] - ProductID: 0003
+   0.052030	[D2] - Manufacturer: Linux 3.16.0-4-amd64 xhci_hcd
+   0.052055	[D2] - Product: xHCI Host Controller
+   0.052080	[D2] - Serial Number: 0000:04:00.0
+   0.052105	[D2] - Bus: 003
+   0.052131	[D2] - Device release number: 0316
+   0.052156	[D2] Trying to match device
+   0.052186	[D2] Device does not match - skipping
+   0.052473	[D2] Checking device (0001/0000) (002/002)
+   0.059310	[D2] - VendorID: 0001
+   0.059400	[D2] - ProductID: 0000
+   0.059428	[D2] - Manufacturer: unknown
+   0.059454	[D2] - Product: MEC0003
+   0.059479	[D2] - Serial Number: unknown
+   0.059505	[D2] - Bus: 002
+   0.059531	[D2] - Device release number: 0100
+   0.059557	[D2] Trying to match device
+   0.059678	[D2] Device matches
+   0.059782	[D3] nut_usb_set_altinterface: skipped usb_set_altinterface(udev, 0)
+   0.059832	[D5] send_to_all: SETINFO ups.vendorid "0001"
+   0.059867	[D5] send_to_all: SETINFO ups.productid "0000"
+   0.059909	[D3] send: QGS
+   0.059950	[D3] read: QGS
+   0.060092	[D2] qx_process_answer: short reply (input.voltage)
+   0.060132	[D3] send: QGS
+   0.060161	[D3] read: QGS
+   0.060188	[D2] qx_process_answer: short reply (input.voltage)
+   0.060219	[D3] send: QGS
+   0.060247	[D3] read: QGS
+   0.060274	[D2] qx_process_answer: short reply (input.voltage)
+   0.060303	[D3] send: M
+   0.060330	[D3] read: M
+   0.060374	[D2] voltronic_qs_protocol: invalid protocol [M]
+   0.060409	[D4] ups_infoval_set: failed to preprocess value [ups.firmware.aux: M]
+   0.060437	[D3] send: M
+   0.060465	[D3] read: M
+   0.060493	[D2] voltronic_qs_protocol: invalid protocol [M]
+   0.060520	[D4] ups_infoval_set: failed to preprocess value [ups.firmware.aux: M]
+   0.060548	[D3] send: M
+   0.060575	[D3] read: M
+   0.060603	[D2] voltronic_qs_protocol: invalid protocol [M]
+   0.060629	[D4] ups_infoval_set: failed to preprocess value [ups.firmware.aux: M]
+   0.060657	[D3] send: M
+   0.060684	[D3] read: M
+   0.060728	[D2] voltronic_qs_hex_protocol: invalid protocol [M]
+   0.060797	[D4] ups_infoval_set: failed to preprocess value [ups.firmware.aux: M]
+   0.060830	[D3] send: M
+   0.060858	[D3] read: M
+   0.060891	[D2] voltronic_qs_hex_protocol: invalid protocol [M]
+   0.060918	[D4] ups_infoval_set: failed to preprocess value [ups.firmware.aux: M]
+   0.060946	[D3] send: M
+   0.060973	[D3] read: M
+   0.061002	[D2] voltronic_qs_hex_protocol: invalid protocol [M]
+   0.061029	[D4] ups_infoval_set: failed to preprocess value [ups.firmware.aux: M]
+   0.061097	[D3] send: QS
+   0.061127	[D3] read: QS
+   0.061169	[D2] qx_process_answer: short reply (input.voltage)
+   0.061206	[D3] send: QS
+   0.061234	[D3] read: QS
+   0.061261	[D2] qx_process_answer: short reply (input.voltage)
+   0.061289	[D3] send: QS
+   0.061316	[D3] read: QS
+   0.061343	[D2] qx_process_answer: short reply (input.voltage)
+   0.061372	[D3] send: D
+   0.061399	[D3] read: D
+   0.061440	[D2] qx_process_answer: short reply (input.voltage)
+   0.061476	[D3] send: D
+   0.061504	[D3] read: D
+   0.061531	[D2] qx_process_answer: short reply (input.voltage)
+   0.061559	[D3] send: D
+   0.061587	[D3] read: D
+   0.061614	[D2] qx_process_answer: short reply (input.voltage)
+   0.061642	[D3] send: Q1
+   0.061669	[D4] command index: 0x03
+   0.562584	[D3] interrupt_read: No error (-110)
+   0.579143	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   0.579206	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   0.579237	[D5]  30 30 30 0d
+   0.579265	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   0.579329	[D5] send_to_all: SETINFO input.voltage "0.0"
+   0.579365	[D3] send: ID
+   0.579398	[D3] read: ID
+   0.579463	[D4] bestups_preprocess_id_answer: wrong length [device.model: 3]
+   0.579499	[D4] qx_process: failed to preprocess answer [device.model]
+   0.579532	[D5] send_to_all: DELINFO input.voltage
+   0.579562	[D3] send: Q1
+   0.579590	[D4] command index: 0x03
+   1.080885	[D3] interrupt_read: No error (-110)
+   1.098371	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   1.098493	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   1.098526	[D5]  30 30 30 0d
+   1.098554	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   1.098610	[D5] send_to_all: SETINFO input.voltage "0.0"
+   1.098646	[D3] send: ID
+   1.098679	[D3] read: ID
+   1.098710	[D4] bestups_preprocess_id_answer: wrong length [device.model: 3]
+   1.098738	[D4] qx_process: failed to preprocess answer [device.model]
+   1.098770	[D5] send_to_all: DELINFO input.voltage
+   1.098801	[D3] send: Q1
+   1.098827	[D4] command index: 0x03
+   1.599921	[D3] interrupt_read: No error (-110)
+   1.617377	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   1.617501	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   1.617533	[D5]  30 30 30 0d
+   1.617561	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   1.617618	[D5] send_to_all: SETINFO input.voltage "0.0"
+   1.617653	[D3] send: ID
+   1.617687	[D3] read: ID
+   1.617717	[D4] bestups_preprocess_id_answer: wrong length [device.model: 3]
+   1.617745	[D4] qx_process: failed to preprocess answer [device.model]
+   1.617778	[D5] send_to_all: DELINFO input.voltage
+   1.617809	[D3] send: Q1
+   1.617837	[D4] command index: 0x03
+   2.118712	[D3] interrupt_read: No error (-110)
+   2.136322	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   2.136442	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   2.136475	[D5]  30 30 30 0d
+   2.136503	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   2.136599	[D5] send_to_all: SETINFO input.voltage "0.0"
+   2.136638	[D3] send: QPI
+   2.136672	[D3] read: QPI
+   2.136700	[D2] qx_process_answer: short reply (ups.firmware.aux)
+   2.136733	[D5] send_to_all: DELINFO input.voltage
+   2.136831	[D3] send: Q1
+   2.136866	[D4] command index: 0x03
+   2.637654	[D3] interrupt_read: No error (-110)
+   2.655321	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   2.655443	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   2.655475	[D5]  30 30 30 0d
+   2.655503	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   2.655560	[D5] send_to_all: SETINFO input.voltage "0.0"
+   2.655592	[D3] send: QPI
+   2.655625	[D3] read: QPI
+   2.655653	[D2] qx_process_answer: short reply (ups.firmware.aux)
+   2.655686	[D5] send_to_all: DELINFO input.voltage
+   2.655764	[D3] send: Q1
+   2.655794	[D4] command index: 0x03
+   3.156374	[D3] interrupt_read: No error (-110)
+   3.173317	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   3.173440	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   3.173473	[D5]  30 30 30 0d
+   3.173500	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   3.173558	[D5] send_to_all: SETINFO input.voltage "0.0"
+   3.173590	[D3] send: QPI
+   3.173623	[D3] read: QPI
+   3.173652	[D2] qx_process_answer: short reply (ups.firmware.aux)
+   3.173685	[D5] send_to_all: DELINFO input.voltage
+   3.173716	[D3] send: Q1
+   3.173743	[D4] command index: 0x03
+   3.673927	[D3] interrupt_read: No error (-110)
+   3.691183	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   3.691305	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   3.691338	[D5]  30 30 30 0d
+   3.691367	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   3.691454	[D5] send_to_all: SETINFO input.voltage "0.0"
+   3.691506	[D3] send: I
+   3.691539	[D4] command index: 0x0c
+   4.192188	[D3] interrupt_read: No error (-110)
+   4.207125	[D5] read: (39 bytes) => 23 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20
+   4.207185	[D5]  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 0d
+   4.207213	[D3] read: #                                     
+   4.207292	[D1] ups_infoval_set: non significant value [ups.firmware]
+   4.207336	[D5] send_to_all: DELINFO input.voltage
+   4.207369	[D3] send: Q1
+   4.207398	[D4] command index: 0x03
+   4.708028	[D3] interrupt_read: No error (-110)
+   4.725352	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   4.725474	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   4.725507	[D5]  30 30 30 0d
+   4.725534	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   4.725591	[D5] send_to_all: SETINFO input.voltage "0.0"
+   4.725635	[D3] send: I
+   4.725668	[D4] command index: 0x0c
+   5.226403	[D3] interrupt_read: No error (-110)
+   5.241307	[D5] read: (39 bytes) => 23 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20
+   5.241424	[D5]  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 0d
+   5.241453	[D3] read: #                                     
+   5.241494	[D1] ups_infoval_set: non significant value [ups.firmware]
+   5.241531	[D5] send_to_all: DELINFO input.voltage
+   5.241563	[D3] send: Q1
+   5.241592	[D4] command index: 0x03
+   5.742574	[D3] interrupt_read: No error (-110)
+   5.759306	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   5.759429	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   5.759461	[D5]  30 30 30 0d
+   5.759488	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   5.759544	[D5] send_to_all: SETINFO input.voltage "0.0"
+   5.759589	[D3] send: I
+   5.759621	[D4] command index: 0x0c
+   6.260899	[D3] interrupt_read: No error (-110)
+   6.276302	[D5] read: (39 bytes) => 23 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20
+   6.276419	[D5]  20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 0d
+   6.276448	[D3] read: #                                     
+   6.276489	[D1] ups_infoval_set: non significant value [ups.firmware]
+   6.276526	[D5] send_to_all: DELINFO input.voltage
+   6.276559	[D3] send: Q1
+   6.276587	[D4] command index: 0x03
+   6.777859	[D3] interrupt_read: No error (-110)
+   6.795165	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   6.795289	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   6.795322	[D5]  30 30 30 0d
+   6.795350	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   6.795499	[D5] send_to_all: SETINFO input.voltage "0.0"
+   6.795551	[D3] send: FW?
+   6.795587	[D3] read: FW?
+   6.795631	[D2] qx_process_answer: short reply (ups.firmware)
+   6.795672	[D5] send_to_all: DELINFO input.voltage
+   6.795704	[D3] send: Q1
+   6.795732	[D4] command index: 0x03
+   7.296026	[D3] interrupt_read: No error (-110)
+   7.313293	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   7.313414	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   7.313447	[D5]  30 30 30 0d
+   7.313475	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   7.313531	[D5] send_to_all: SETINFO input.voltage "0.0"
+   7.313575	[D3] send: FW?
+   7.313612	[D3] read: FW?
+   7.313641	[D2] qx_process_answer: short reply (ups.firmware)
+   7.313675	[D5] send_to_all: DELINFO input.voltage
+   7.313707	[D3] send: Q1
+   7.313734	[D4] command index: 0x03
+   7.814569	[D3] interrupt_read: No error (-110)
+   7.832158	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   7.832280	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   7.832313	[D5]  30 30 30 0d
+   7.832341	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   7.832397	[D5] send_to_all: SETINFO input.voltage "0.0"
+   7.832443	[D3] send: FW?
+   7.832480	[D3] read: FW?
+   7.832509	[D2] qx_process_answer: short reply (ups.firmware)
+   7.832543	[D5] send_to_all: DELINFO input.voltage
+   7.832576	[D3] send: Q1
+   7.832604	[D4] command index: 0x03
+   8.333249	[D3] interrupt_read: No error (-110)
+   8.350290	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   8.350414	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   8.350448	[D5]  30 30 30 0d
+   8.350476	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   8.350638	[D5] send_to_all: SETINFO input.voltage "0.0"
+   8.350674	Using protocol: Q1 0.07
+   8.350718	[D5] send_to_all: SETINFO device.type "ups"
+   8.350754	[D5] send_to_all: SETINFO driver.version "2.7.3-396-g81766ee"
+   8.350788	[D5] send_to_all: SETINFO driver.version.internal "0.29"
+   8.350821	[D5] send_to_all: SETINFO driver.name "nutdrv_qx"
+   8.350849	[D1] upsdrv_initinfo...
+   8.350882	[D5] send_to_all: SETINFO driver.version.data "Q1 0.07"
+   8.350915	[D3] send: Q1
+   8.350944	[D4] command index: 0x03
+   8.852380	[D3] interrupt_read: No error (-110)
+   8.869287	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   8.869411	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   8.869444	[D5]  30 30 30 0d
+   8.869473	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   8.869531	[D5] send_to_all: SETINFO input.voltage.fault "0.0"
+   8.869599	[D5] send_to_all: SETINFO output.voltage "0.0"
+   8.869765	[D5] send_to_all: SETINFO ups.load "0"
+   8.869817	[D5] send_to_all: SETINFO input.frequency "0.0"
+   8.869859	[D5] send_to_all: SETINFO battery.voltage "0.00"
+   8.869902	[D5] send_to_all: SETINFO ups.temperature "0.0"
+   8.869953	[D5] update_status: OL
+   8.869993	[D5] update_status: !LB
+   8.870059	[D5] send_to_all: SETINFO ups.type "online"
+   8.870102	[D5] update_status: !CAL
+   8.870135	[D5] update_status: !FSD
+   8.870176	[D5] send_to_all: SETINFO ups.beeper.status "disabled"
+   8.870227	[D5] send_to_all: ADDCMD beeper.toggle
+   8.870266	[D5] send_to_all: ADDCMD load.off
+   8.870297	[D5] send_to_all: ADDCMD load.on
+   8.870328	[D5] send_to_all: ADDCMD shutdown.return
+   8.870360	[D5] send_to_all: ADDCMD shutdown.stayoff
+   8.870391	[D5] send_to_all: ADDCMD shutdown.stop
+   8.870423	[D5] send_to_all: ADDCMD test.battery.start
+   8.870454	[D5] send_to_all: ADDCMD test.battery.start.deep
+   8.870487	[D5] send_to_all: ADDCMD test.battery.start.quick
+   8.870518	[D5] send_to_all: ADDCMD test.battery.stop
+   8.870553	[D5] send_to_all: SETINFO ups.delay.start "180"
+   8.870585	[D5] send_to_all: SETFLAGS ups.delay.start RW
+   8.870633	[D5] send_to_all: ADDRANGE ups.delay.start  0 599940
+   8.870666	[D5] send_to_all: SETFLAGS ups.delay.start NUMBER
+   8.870701	[D5] send_to_all: SETINFO ups.delay.shutdown "30"
+   8.870732	[D5] send_to_all: SETFLAGS ups.delay.shutdown RW
+   8.870764	[D5] send_to_all: ADDRANGE ups.delay.shutdown  12 600
+   8.870795	[D5] send_to_all: SETFLAGS ups.delay.shutdown NUMBER
+   8.870830	Can't autodetect number of battery packs [-1/0.00]
+   8.870905	Battery runtime will not be calculated (runtimecal not set)
+   8.870952	[D5] send_to_all: SETINFO driver.parameter.pollfreq "30"
+   8.870991	[D1] upsdrv_updateinfo...
+   8.871020	[D1] Quick update...
+   8.871051	[D3] send: Q1
+   8.871079	[D4] command index: 0x03
+   9.371810	[D3] interrupt_read: No error (-110)
+   9.389283	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   9.389408	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   9.389441	[D5]  30 30 30 0d
+   9.389469	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   9.389507	[D5] update_status: OL
+   9.389542	[D5] update_status: !LB
+   9.389581	[D5] update_status: !CAL
+   9.389615	[D5] update_status: !FSD
+   9.389665	[D5] send_to_all: SETINFO ups.status "OL"
+   9.389696	[D5] send_to_all: DATAOK
+   9.389988	[D2] dstate_init: sock /var/state/ups/nutdrv_qx-powercool open on fd 5
+   9.390030	[D5] send_to_all: SETINFO driver.parameter.pollinterval "2"
+   9.390064	[D5] send_to_all: SETINFO driver.parameter.synchronous "no"
+   9.390096	[D1] upsdrv_updateinfo...
+   9.390124	[D1] Quick update...
+   9.390156	[D3] send: Q1
+   9.390185	[D4] command index: 0x03
+   9.891152	[D3] interrupt_read: No error (-110)
+   9.908143	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+   9.908269	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+   9.908302	[D5]  30 30 30 0d
+   9.908330	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+   9.908367	[D5] update_status: OL
+   9.908402	[D5] update_status: !LB
+   9.908442	[D5] update_status: !CAL
+   9.908476	[D5] update_status: !FSD
+  11.391858	[D1] upsdrv_updateinfo...
+  11.391972	[D1] Quick update...
+  11.392010	[D3] send: Q1
+  11.392042	[D4] command index: 0x03
+  11.892548	[D3] interrupt_read: No error (-110)
+  11.910133	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  11.910261	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  11.910295	[D5]  30 30 30 0d
+  11.910325	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  11.910363	[D5] update_status: OL
+  11.910399	[D5] update_status: !LB
+  11.910440	[D5] update_status: !CAL
+  11.910476	[D5] update_status: !FSD
+  13.393591	[D1] upsdrv_updateinfo...
+  13.393695	[D1] Quick update...
+  13.393732	[D3] send: Q1
+  13.393765	[D4] command index: 0x03
+  13.894179	[D3] interrupt_read: No error (-110)
+  13.911261	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  13.911388	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  13.911422	[D5]  30 30 30 0d
+  13.911451	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  13.911488	[D5] update_status: OL
+  13.911525	[D5] update_status: !LB
+  13.911565	[D5] update_status: !CAL
+  13.911600	[D5] update_status: !FSD
+  15.395325	[D1] upsdrv_updateinfo...
+  15.395428	[D1] Quick update...
+  15.395465	[D3] send: Q1
+  15.395498	[D4] command index: 0x03
+  15.896175	[D3] interrupt_read: No error (-110)
+  15.913248	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  15.913376	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  15.913411	[D5]  30 30 30 0d
+  15.913441	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  15.913478	[D5] update_status: OL
+  15.913514	[D5] update_status: !LB
+  15.913554	[D5] update_status: !CAL
+  15.913589	[D5] update_status: !FSD
+  17.397064	[D1] upsdrv_updateinfo...
+  17.397178	[D1] Quick update...
+  17.397215	[D3] send: Q1
+  17.397248	[D4] command index: 0x03
+  17.897851	[D3] interrupt_read: No error (-110)
+  17.915101	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  17.915228	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  17.915263	[D5]  30 30 30 0d
+  17.915293	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  17.915330	[D5] update_status: OL
+  17.915366	[D5] update_status: !LB
+  17.915450	[D5] update_status: !CAL
+  17.915488	[D5] update_status: !FSD
+  19.398796	[D1] upsdrv_updateinfo...
+  19.398900	[D1] Quick update...
+  19.398937	[D3] send: Q1
+  19.398971	[D4] command index: 0x03
+  19.899961	[D3] interrupt_read: No error (-110)
+  19.917231	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  19.917358	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  19.917393	[D5]  30 30 30 0d
+  19.917423	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  19.917461	[D5] update_status: OL
+  19.917497	[D5] update_status: !LB
+  19.917537	[D5] update_status: !CAL
+  19.917573	[D5] update_status: !FSD
+  21.400523	[D1] upsdrv_updateinfo...
+  21.400626	[D1] Quick update...
+  21.400663	[D3] send: Q1
+  21.400696	[D4] command index: 0x03
+  21.901029	[D3] interrupt_read: No error (-110)
+  21.918214	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  21.918341	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  21.918375	[D5]  30 30 30 0d
+  21.918405	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  21.918443	[D5] update_status: OL
+  21.918479	[D5] update_status: !LB
+  21.918519	[D5] update_status: !CAL
+  21.918554	[D5] update_status: !FSD
+  23.402260	[D1] upsdrv_updateinfo...
+  23.402374	[D1] Quick update...
+  23.402412	[D3] send: Q1
+  23.402444	[D4] command index: 0x03
+  23.903379	[D3] interrupt_read: No error (-110)
+  23.920203	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  23.920328	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  23.920362	[D5]  30 30 30 0d
+  23.920391	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  23.920429	[D5] update_status: OL
+  23.920465	[D5] update_status: !LB
+  23.920505	[D5] update_status: !CAL
+  23.920540	[D5] update_status: !FSD
+  25.403868	[D1] upsdrv_updateinfo...
+  25.403973	[D1] Quick update...
+  25.404009	[D3] send: Q1
+  25.404042	[D4] command index: 0x03
+  25.904693	[D3] interrupt_read: No error (-110)
+  25.922060	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  25.922189	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  25.922223	[D5]  30 30 30 0d
+  25.922252	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  25.922290	[D5] update_status: OL
+  25.922328	[D5] update_status: !LB
+  25.922369	[D5] update_status: !CAL
+  25.922405	[D5] update_status: !FSD
+  27.405604	[D1] upsdrv_updateinfo...
+  27.405708	[D1] Quick update...
+  27.405745	[D3] send: Q1
+  27.405778	[D4] command index: 0x03
+  27.906041	[D3] interrupt_read: No error (-110)
+  27.923049	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  27.923176	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  27.923212	[D5]  30 30 30 0d
+  27.923242	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  27.923281	[D5] update_status: OL
+  27.923318	[D5] update_status: !LB
+  27.923359	[D5] update_status: !CAL
+  27.923394	[D5] update_status: !FSD
+  29.407227	[D1] upsdrv_updateinfo...
+  29.407346	[D1] Quick update...
+  29.407383	[D3] send: Q1
+  29.407416	[D4] command index: 0x03
+  29.908621	[D3] interrupt_read: No error (-110)
+  29.926044	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  29.926171	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  29.926206	[D5]  30 30 30 0d
+  29.926236	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  29.926274	[D5] update_status: OL
+  29.926312	[D5] update_status: !LB
+  29.926353	[D5] update_status: !CAL
+  29.926388	[D5] update_status: !FSD
+  31.408963	[D1] upsdrv_updateinfo...
+  31.409074	[D1] Quick update...
+  31.409116	[D3] send: Q1
+  31.409151	[D4] command index: 0x03
+  31.909489	[D3] interrupt_read: No error (-110)
+  31.927025	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  31.927157	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  31.927244	[D5]  30 30 30 0d
+  31.927277	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  31.927315	[D5] update_status: OL
+  31.927351	[D5] update_status: !LB
+  31.927391	[D5] update_status: !CAL
+  31.927426	[D5] update_status: !FSD
+  33.410573	[D1] upsdrv_updateinfo...
+  33.410678	[D1] Quick update...
+  33.410716	[D3] send: Q1
+  33.410749	[D4] command index: 0x03
+  33.911156	[D3] interrupt_read: No error (-110)
+  33.928019	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  33.928148	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  33.928183	[D5]  30 30 30 0d
+  33.928213	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  33.928253	[D5] update_status: OL
+  33.928290	[D5] update_status: !LB
+  33.928332	[D5] update_status: !CAL
+  33.928366	[D5] update_status: !FSD
+  35.412133	[D1] upsdrv_updateinfo...
+  35.412242	[D1] Quick update...
+  35.412281	[D3] send: Q1
+  35.412313	[D4] command index: 0x03
+  35.913374	[D3] interrupt_read: No error (-110)
+  35.930014	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  35.930141	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  35.930176	[D5]  30 30 30 0d
+  35.930205	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  35.930243	[D5] update_status: OL
+  35.930279	[D5] update_status: !LB
+  35.930320	[D5] update_status: !CAL
+  35.930355	[D5] update_status: !FSD
+  37.413868	[D1] upsdrv_updateinfo...
+  37.413972	[D1] Quick update...
+  37.414009	[D3] send: Q1
+  37.414042	[D4] command index: 0x03
+  37.914584	[D3] interrupt_read: No error (-110)
+  37.931945	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  37.932072	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  37.932416	[D5]  30 30 30 0d
+  37.932448	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  37.932487	[D5] update_status: OL
+  37.932524	[D5] update_status: !LB
+  37.932741	[D5] update_status: !CAL
+  37.932869	[D5] update_status: !FSD
+  39.415602	[D1] upsdrv_updateinfo...
+  39.415706	[D1] Quick update...
+  39.415743	[D3] send: Q1
+  39.415776	[D4] command index: 0x03
+  39.916045	[D3] interrupt_read: No error (-110)
+  39.933124	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  39.933249	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  39.933284	[D5]  30 30 30 0d
+  39.933313	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  39.933351	[D5] update_status: OL
+  39.933387	[D5] update_status: !LB
+  39.933427	[D5] update_status: !CAL
+  39.933462	[D5] update_status: !FSD
+  41.417339	[D1] upsdrv_updateinfo...
+  41.417452	[D1] Full update...
+  41.417490	[D3] send: Q1
+  41.417523	[D4] command index: 0x03
+  41.918843	[D3] interrupt_read: No error (-110)
+  41.935972	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  41.936099	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  41.936134	[D5]  30 30 30 0d
+  41.936164	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  41.936275	[D5] update_status: OL
+  41.936311	[D5] update_status: !LB
+  41.936356	[D5] update_status: !CAL
+  41.936390	[D5] update_status: !FSD
+  43.419073	[D1] upsdrv_updateinfo...
+  43.419176	[D1] Quick update...
+  43.419213	[D3] send: Q1
+  43.419246	[D4] command index: 0x03
+  43.919899	[D3] interrupt_read: No error (-110)
+  43.937101	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  43.937226	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  43.937260	[D5]  30 30 30 0d
+  43.937290	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  43.937327	[D5] update_status: OL
+  43.937363	[D5] update_status: !LB
+  43.937404	[D5] update_status: !CAL
+  43.937438	[D5] update_status: !FSD
+  45.420838	[D1] upsdrv_updateinfo...
+  45.420941	[D1] Quick update...
+  45.420978	[D3] send: Q1
+  45.421010	[D4] command index: 0x03
+  45.922375	[D3] interrupt_read: No error (-110)
+  45.939949	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  45.940077	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  45.940112	[D5]  30 30 30 0d
+  45.940143	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  45.940181	[D5] update_status: OL
+  45.940218	[D5] update_status: !LB
+  45.940258	[D5] update_status: !CAL
+  45.940295	[D5] update_status: !FSD
+  47.421142	[D1] upsdrv_updateinfo...
+  47.421260	[D1] Quick update...
+  47.421298	[D3] send: Q1
+  47.421331	[D4] command index: 0x03
+  47.922325	[D3] interrupt_read: No error (-110)
+  47.938944	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  47.939071	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  47.939106	[D5]  30 30 30 0d
+  47.939135	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  47.939173	[D5] update_status: OL
+  47.939210	[D5] update_status: !LB
+  47.939251	[D5] update_status: !CAL
+  47.939287	[D5] update_status: !FSD
+  49.422879	[D1] upsdrv_updateinfo...
+  49.422983	[D1] Quick update...
+  49.423020	[D3] send: Q1
+  49.423053	[D4] command index: 0x03
+  49.923378	[D3] interrupt_read: No error (-110)
+  49.941068	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  49.941195	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  49.941230	[D5]  30 30 30 0d
+  49.941259	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  49.941297	[D5] update_status: OL
+  49.941333	[D5] update_status: !LB
+  49.941373	[D5] update_status: !CAL
+  49.941408	[D5] update_status: !FSD
+  51.424608	[D1] upsdrv_updateinfo...
+  51.424712	[D1] Quick update...
+  51.424749	[D3] send: Q1
+  51.424824	[D4] command index: 0x03
+  51.925349	[D3] interrupt_read: No error (-110)
+  51.943055	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  51.943181	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  51.943215	[D5]  30 30 30 0d
+  51.943244	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  51.943282	[D5] update_status: OL
+  51.943318	[D5] update_status: !LB
+  51.943358	[D5] update_status: !CAL
+  51.943393	[D5] update_status: !FSD
+  53.426342	[D1] upsdrv_updateinfo...
+  53.426457	[D1] Quick update...
+  53.426494	[D3] send: Q1
+  53.426527	[D4] command index: 0x03
+  53.927259	[D3] interrupt_read: No error (-110)
+  53.943911	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  53.944038	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  53.944073	[D5]  30 30 30 0d
+  53.944104	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  53.944142	[D5] update_status: OL
+  53.944179	[D5] update_status: !LB
+  53.944220	[D5] update_status: !CAL
+  53.944256	[D5] update_status: !FSD
+  55.428079	[D1] upsdrv_updateinfo...
+  55.428183	[D1] Quick update...
+  55.428220	[D3] send: Q1
+  55.428253	[D4] command index: 0x03
+  55.929475	[D3] interrupt_read: No error (-110)
+  55.947037	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  55.947165	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  55.947199	[D5]  30 30 30 0d
+  55.947229	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  55.947267	[D5] update_status: OL
+  55.947303	[D5] update_status: !LB
+  55.947343	[D5] update_status: !CAL
+  55.947378	[D5] update_status: !FSD
+  57.429813	[D1] upsdrv_updateinfo...
+  57.429918	[D1] Quick update...
+  57.429955	[D3] send: Q1
+  57.429988	[D4] command index: 0x03
+  57.931146	[D3] interrupt_read: No error (-110)
+  57.948028	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  57.948152	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  57.948187	[D5]  30 30 30 0d
+  57.948216	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  57.948254	[D5] update_status: OL
+  57.948291	[D5] update_status: !LB
+  57.948331	[D5] update_status: !CAL
+  57.948408	[D5] update_status: !FSD
+  59.431548	[D1] upsdrv_updateinfo...
+  59.431662	[D1] Quick update...
+  59.431699	[D3] send: Q1
+  59.431731	[D4] command index: 0x03
+  59.932008	[D3] interrupt_read: No error (-110)
+  59.948888	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  59.949017	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  59.949052	[D5]  30 30 30 0d
+  59.949081	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  59.949120	[D5] update_status: OL
+  59.949158	[D5] update_status: !LB
+  59.949198	[D5] update_status: !CAL
+  59.949233	[D5] update_status: !FSD
+  61.433156	[D1] upsdrv_updateinfo...
+  61.433260	[D1] Quick update...
+  61.433298	[D3] send: Q1
+  61.433331	[D4] command index: 0x03
+  61.934303	[D3] interrupt_read: No error (-110)
+  61.951963	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  61.952088	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  61.952122	[D5]  30 30 30 0d
+  61.952152	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  61.952190	[D5] update_status: OL
+  61.952226	[D5] update_status: !LB
+  61.952266	[D5] update_status: !CAL
+  61.952301	[D5] update_status: !FSD
+  63.434890	[D1] upsdrv_updateinfo...
+  63.434993	[D1] Quick update...
+  63.435030	[D3] send: Q1
+  63.435063	[D4] command index: 0x03
+  63.936169	[D3] interrupt_read: No error (-110)
+  63.952881	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  63.953010	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  63.953045	[D5]  30 30 30 0d
+  63.953075	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  63.953113	[D5] update_status: OL
+  63.953151	[D5] update_status: !LB
+  63.953191	[D5] update_status: !CAL
+  63.953226	[D5] update_status: !FSD
+  65.436497	[D1] upsdrv_updateinfo...
+  65.436610	[D1] Quick update...
+  65.436653	[D3] send: Q1
+  65.436690	[D4] command index: 0x03
+  65.937271	[D3] interrupt_read: No error (-110)
+  65.954812	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  65.954943	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  65.954982	[D5]  30 30 30 0d
+  65.955016	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  65.955058	[D5] update_status: OL
+  65.955099	[D5] update_status: !LB
+  65.955144	[D5] update_status: !CAL
+  65.955183	[D5] update_status: !FSD
+  67.438230	[D1] upsdrv_updateinfo...
+  67.438340	[D1] Quick update...
+  67.438381	[D3] send: Q1
+  67.438417	[D4] command index: 0x03
+  67.938789	[D3] interrupt_read: No error (-110)
+  67.955796	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  67.955929	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  67.955967	[D5]  30 30 30 0d
+  67.956000	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  67.956042	[D5] update_status: OL
+  67.956083	[D5] update_status: !LB
+  67.956127	[D5] update_status: !CAL
+  67.956165	[D5] update_status: !FSD
+  69.439964	[D1] upsdrv_updateinfo...
+  69.440070	[D1] Quick update...
+  69.440111	[D3] send: Q1
+  69.440147	[D4] command index: 0x03
+  69.941053	[D3] interrupt_read: No error (-110)
+  69.957797	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  69.957928	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  69.957967	[D5]  30 30 30 0d
+  69.958000	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  69.958042	[D5] update_status: OL
+  69.958082	[D5] update_status: !LB
+  69.958127	[D5] update_status: !CAL
+  69.958165	[D5] update_status: !FSD
+  71.441698	[D1] upsdrv_updateinfo...
+  71.441815	[D1] Quick update...
+  71.441856	[D3] send: Q1
+  71.441892	[D4] command index: 0x03
+  71.942361	[D3] interrupt_read: No error (-110)
+  71.959793	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  71.959925	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  71.959964	[D5]  30 30 30 0d
+  71.960044	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  71.960084	[D5] update_status: OL
+  71.960121	[D5] update_status: !LB
+  71.960162	[D5] update_status: !CAL
+  71.960198	[D5] update_status: !FSD
+  73.443302	[D1] upsdrv_updateinfo...
+  73.443406	[D1] Full update...
+  73.443444	[D3] send: Q1
+  73.443476	[D4] command index: 0x03
+  73.944725	[D3] interrupt_read: No error (-110)
+  73.961805	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  73.961934	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  73.961968	[D5]  30 30 30 0d
+  73.961998	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  73.962108	[D5] update_status: OL
+  73.962143	[D5] update_status: !LB
+  73.962188	[D5] update_status: !CAL
+  73.962222	[D5] update_status: !FSD
+  75.444908	[D1] upsdrv_updateinfo...
+  75.445013	[D1] Quick update...
+  75.445050	[D3] send: Q1
+  75.445083	[D4] command index: 0x03
+  75.945994	[D3] interrupt_read: No error (-110)
+  75.962796	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  75.962924	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  75.962958	[D5]  30 30 30 0d
+  75.962988	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  75.963027	[D5] update_status: OL
+  75.963063	[D5] update_status: !LB
+  75.963104	[D5] update_status: !CAL
+  75.963139	[D5] update_status: !FSD
+  77.446515	[D1] upsdrv_updateinfo...
+  77.446628	[D1] Quick update...
+  77.446666	[D3] send: Q1
+  77.446698	[D4] command index: 0x03
+  77.947887	[D3] interrupt_read: No error (-110)
+  77.964853	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  77.964978	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  77.965013	[D5]  30 30 30 0d
+  77.965044	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  77.965083	[D5] update_status: OL
+  77.965120	[D5] update_status: !LB
+  77.965160	[D5] update_status: !CAL
+  77.965197	[D5] update_status: !FSD
+  79.448076	[D1] upsdrv_updateinfo...
+  79.448176	[D1] Quick update...
+  79.448213	[D3] send: Q1
+  79.448246	[D4] command index: 0x03
+  79.949174	[D3] interrupt_read: No error (-110)
+  79.965780	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  79.965903	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  79.965938	[D5]  30 30 30 0d
+  79.965968	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  79.966007	[D5] update_status: OL
+  79.966044	[D5] update_status: !LB
+  79.966085	[D5] update_status: !CAL
+  79.966121	[D5] update_status: !FSD
+  81.449685	[D1] upsdrv_updateinfo...
+  81.449789	[D1] Quick update...
+  81.449827	[D3] send: Q1
+  81.449860	[D4] command index: 0x03
+  81.950806	[D3] interrupt_read: No error (-110)
+  81.967763	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  81.967889	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  81.967924	[D5]  30 30 30 0d
+  81.967954	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  81.967992	[D5] update_status: OL
+  81.968029	[D5] update_status: !LB
+  81.968069	[D5] update_status: !CAL
+  81.968105	[D5] update_status: !FSD
+  83.451413	[D1] upsdrv_updateinfo...
+  83.451526	[D1] Quick update...
+  83.451564	[D3] send: Q1
+  83.451597	[D4] command index: 0x03
+  83.952159	[D3] interrupt_read: No error (-110)
+  83.969664	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  83.969788	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  83.969823	[D5]  30 30 30 0d
+  83.969853	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  83.969892	[D5] update_status: OL
+  83.969929	[D5] update_status: !LB
+  83.969970	[D5] update_status: !CAL
+  83.970005	[D5] update_status: !FSD
+  85.453147	[D1] upsdrv_updateinfo...
+  85.453251	[D1] Quick update...
+  85.453289	[D3] send: Q1
+  85.453322	[D4] command index: 0x03
+  85.953755	[D3] interrupt_read: No error (-110)
+  85.970871	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  85.971039	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  85.971075	[D5]  30 30 30 0d
+  85.971104	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  85.971142	[D5] update_status: OL
+  85.971178	[D5] update_status: !LB
+  85.971219	[D5] update_status: !CAL
+  85.971254	[D5] update_status: !FSD
+  87.454879	[D1] upsdrv_updateinfo...
+  87.454982	[D1] Quick update...
+  87.455019	[D3] send: Q1
+  87.455052	[D4] command index: 0x03
+  87.955504	[D3] interrupt_read: No error (-110)
+  87.972868	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  87.972995	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  87.973030	[D5]  30 30 30 0d
+  87.973059	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  87.973097	[D5] update_status: OL
+  87.973133	[D5] update_status: !LB
+  87.973173	[D5] update_status: !CAL
+  87.973208	[D5] update_status: !FSD
+  89.456612	[D1] upsdrv_updateinfo...
+  89.456725	[D1] Quick update...
+  89.456800	[D3] send: Q1
+  89.456838	[D4] command index: 0x03
+  89.957312	[D3] interrupt_read: No error (-110)
+  89.974850	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  89.974977	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  89.975012	[D5]  30 30 30 0d
+  89.975041	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  89.975078	[D5] update_status: OL
+  89.975114	[D5] update_status: !LB
+  89.975154	[D5] update_status: !CAL
+  89.975190	[D5] update_status: !FSD
+  91.458345	[D1] upsdrv_updateinfo...
+  91.458448	[D1] Quick update...
+  91.458485	[D3] send: Q1
+  91.458517	[D4] command index: 0x03
+  91.958907	[D3] interrupt_read: No error (-110)
+  91.975800	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  91.975927	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  91.975961	[D5]  30 30 30 0d
+  91.975990	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  91.976028	[D5] update_status: OL
+  91.976064	[D5] update_status: !LB
+  91.976104	[D5] update_status: !CAL
+  91.976139	[D5] update_status: !FSD
+  93.460077	[D1] upsdrv_updateinfo...
+  93.460181	[D1] Quick update...
+  93.460219	[D3] send: Q1
+  93.460252	[D4] command index: 0x03
+  93.960591	[D3] interrupt_read: No error (-110)
+  93.977708	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  93.977836	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  93.977871	[D5]  30 30 30 0d
+  93.977902	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  93.977939	[D5] update_status: OL
+  93.977975	[D5] update_status: !LB
+  93.978016	[D5] update_status: !CAL
+  93.978052	[D5] update_status: !FSD
+  95.461809	[D1] upsdrv_updateinfo...
+  95.461921	[D1] Quick update...
+  95.461959	[D3] send: Q1
+  95.461992	[D4] command index: 0x03
+  95.962925	[D3] interrupt_read: No error (-110)
+  95.979785	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  95.979910	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  95.979944	[D5]  30 30 30 0d
+  95.979973	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  95.980010	[D5] update_status: OL
+  95.980047	[D5] update_status: !LB
+  95.980086	[D5] update_status: !CAL
+  95.980121	[D5] update_status: !FSD
+  97.463541	[D1] upsdrv_updateinfo...
+  97.463646	[D1] Quick update...
+  97.463684	[D3] send: Q1
+  97.463717	[D4] command index: 0x03
+  97.964604	[D3] interrupt_read: No error (-110)
+  97.981679	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  97.981805	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  97.981839	[D5]  30 30 30 0d
+  97.981869	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  97.981907	[D5] update_status: OL
+  97.981945	[D5] update_status: !LB
+  97.981986	[D5] update_status: !CAL
+  97.982022	[D5] update_status: !FSD
+  99.465273	[D1] upsdrv_updateinfo...
+  99.465424	[D1] Quick update...
+  99.465462	[D3] send: Q1
+  99.465494	[D4] command index: 0x03
+  99.965975	[D3] interrupt_read: No error (-110)
+  99.982778	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+  99.982905	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+  99.982940	[D5]  30 30 30 0d
+  99.982969	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+  99.983007	[D5] update_status: OL
+  99.983043	[D5] update_status: !LB
+  99.983083	[D5] update_status: !CAL
+  99.983118	[D5] update_status: !FSD
+ 101.467005	[D1] upsdrv_updateinfo...
+ 101.467126	[D1] Quick update...
+ 101.467167	[D3] send: Q1
+ 101.467203	[D4] command index: 0x03
+ 101.967530	[D3] interrupt_read: No error (-110)
+ 101.984843	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 101.984973	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 101.985012	[D5]  30 30 30 0d
+ 101.985046	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 101.985089	[D5] update_status: OL
+ 101.985129	[D5] update_status: !LB
+ 101.985173	[D5] update_status: !CAL
+ 101.985212	[D5] update_status: !FSD
+ 103.468725	[D1] upsdrv_updateinfo...
+ 103.468872	[D1] Quick update...
+ 103.468914	[D3] send: Q1
+ 103.468951	[D4] command index: 0x03
+ 103.970046	[D3] interrupt_read: No error (-110)
+ 103.987776	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 103.987907	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 103.987946	[D5]  30 30 30 0d
+ 103.987979	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 103.988021	[D5] update_status: OL
+ 103.988061	[D5] update_status: !LB
+ 103.988105	[D5] update_status: !CAL
+ 103.988144	[D5] update_status: !FSD
+ 105.470460	[D1] upsdrv_updateinfo...
+ 105.470578	[D1] Full update...
+ 105.470620	[D3] send: Q1
+ 105.470657	[D4] command index: 0x03
+ 105.971161	[D3] interrupt_read: No error (-110)
+ 105.988840	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 105.988971	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 105.989010	[D5]  30 30 30 0d
+ 105.989044	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 105.989158	[D5] update_status: OL
+ 105.989199	[D5] update_status: !LB
+ 105.989247	[D5] update_status: !CAL
+ 105.989286	[D5] update_status: !FSD
+ 107.472191	[D1] upsdrv_updateinfo...
+ 107.472309	[D1] Quick update...
+ 107.472350	[D3] send: Q1
+ 107.472386	[D4] command index: 0x03
+ 107.973588	[D3] interrupt_read: No error (-110)
+ 107.990625	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 107.990756	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 107.990795	[D5]  30 30 30 0d
+ 107.990829	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 107.990872	[D5] update_status: OL
+ 107.990913	[D5] update_status: !LB
+ 107.990958	[D5] update_status: !CAL
+ 107.990998	[D5] update_status: !FSD
+ 109.473921	[D1] upsdrv_updateinfo...
+ 109.474030	[D1] Quick update...
+ 109.474071	[D3] send: Q1
+ 109.474107	[D4] command index: 0x03
+ 109.974524	[D3] interrupt_read: No error (-110)
+ 109.991610	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 109.991743	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 109.991782	[D5]  30 30 30 0d
+ 109.991816	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 109.991858	[D5] update_status: OL
+ 109.991899	[D5] update_status: !LB
+ 109.991944	[D5] update_status: !CAL
+ 109.991983	[D5] update_status: !FSD
+ 111.475652	[D1] upsdrv_updateinfo...
+ 111.475761	[D1] Quick update...
+ 111.475802	[D3] send: Q1
+ 111.475839	[D4] command index: 0x03
+ 111.976982	[D3] interrupt_read: No error (-110)
+ 111.993736	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 111.993869	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 111.993907	[D5]  30 30 30 0d
+ 111.993941	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 111.994032	[D5] update_status: OL
+ 111.994071	[D5] update_status: !LB
+ 111.994113	[D5] update_status: !CAL
+ 111.994148	[D5] update_status: !FSD
+ 113.477382	[D1] upsdrv_updateinfo...
+ 113.477495	[D1] Quick update...
+ 113.477532	[D3] send: Q1
+ 113.477565	[D4] command index: 0x03
+ 113.978245	[D3] interrupt_read: No error (-110)
+ 113.995729	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 113.995858	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 113.995892	[D5]  30 30 30 0d
+ 113.995922	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 113.995960	[D5] update_status: OL
+ 113.995997	[D5] update_status: !LB
+ 113.996037	[D5] update_status: !CAL
+ 113.996072	[D5] update_status: !FSD
+ 115.479112	[D1] upsdrv_updateinfo...
+ 115.479217	[D1] Quick update...
+ 115.479255	[D3] send: Q1
+ 115.479288	[D4] command index: 0x03
+ 115.980183	[D3] interrupt_read: No error (-110)
+ 115.997575	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 115.997669	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 115.997691	[D5]  30 30 30 0d
+ 115.997710	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 115.997736	[D5] update_status: OL
+ 115.997759	[D5] update_status: !LB
+ 115.997785	[D5] update_status: !CAL
+ 115.997809	[D5] update_status: !FSD
+ 117.480846	[D1] upsdrv_updateinfo...
+ 117.480951	[D1] Quick update...
+ 117.480989	[D3] send: Q1
+ 117.481022	[D4] command index: 0x03
+ 117.982183	[D3] interrupt_read: No error (-110)
+ 117.999572	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 117.999699	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 117.999734	[D5]  30 30 30 0d
+ 117.999764	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 117.999802	[D5] update_status: OL
+ 117.999840	[D5] update_status: !LB
+ 117.999881	[D5] update_status: !CAL
+ 117.999918	[D5] update_status: !FSD
+ 119.482576	[D1] upsdrv_updateinfo...
+ 119.482689	[D1] Quick update...
+ 119.482727	[D3] send: Q1
+ 119.482761	[D4] command index: 0x03
+ 119.983767	[D3] interrupt_read: No error (-110)
+ 120.000563	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 120.000690	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 120.000725	[D5]  30 30 30 0d
+ 120.000756	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 120.000876	[D5] update_status: OL
+ 120.000915	[D5] update_status: !LB
+ 120.000957	[D5] update_status: !CAL
+ 120.000994	[D5] update_status: !FSD
+ 121.484179	[D1] upsdrv_updateinfo...
+ 121.484285	[D1] Quick update...
+ 121.484323	[D3] send: Q1
+ 121.484356	[D4] command index: 0x03
+ 121.985477	[D3] interrupt_read: No error (-110)
+ 122.002684	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 122.002812	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 122.002846	[D5]  30 30 30 0d
+ 122.002876	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 122.002914	[D5] update_status: OL
+ 122.002951	[D5] update_status: !LB
+ 122.002991	[D5] update_status: !CAL
+ 122.003027	[D5] update_status: !FSD
+ 123.485779	[D1] upsdrv_updateinfo...
+ 123.485884	[D1] Quick update...
+ 123.485921	[D3] send: Q1
+ 123.485955	[D4] command index: 0x03
+ 123.986633	[D3] interrupt_read: No error (-110)
+ 124.003536	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 124.003665	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 124.003700	[D5]  30 30 30 0d
+ 124.003731	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 124.003770	[D5] update_status: OL
+ 124.003808	[D5] update_status: !LB
+ 124.003850	[D5] update_status: !CAL
+ 124.003886	[D5] update_status: !FSD
+ 125.487340	[D1] upsdrv_updateinfo...
+ 125.487450	[D1] Quick update...
+ 125.487489	[D3] send: Q1
+ 125.487522	[D4] command index: 0x03
+ 125.987744	[D3] interrupt_read: No error (-110)
+ 126.004529	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 126.004697	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 126.004735	[D5]  30 30 30 0d
+ 126.004801	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 126.004847	[D5] update_status: OL
+ 126.004884	[D5] update_status: !LB
+ 126.004926	[D5] update_status: !CAL
+ 126.004961	[D5] update_status: !FSD
+ 127.488903	[D1] upsdrv_updateinfo...
+ 127.489004	[D1] Quick update...
+ 127.489041	[D3] send: Q1
+ 127.489076	[D4] command index: 0x03
+ 127.989990	[D3] interrupt_read: No error (-110)
+ 128.007519	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 128.007647	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 128.007682	[D5]  30 30 30 0d
+ 128.007713	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 128.007752	[D5] update_status: OL
+ 128.007789	[D5] update_status: !LB
+ 128.007830	[D5] update_status: !CAL
+ 128.007867	[D5] update_status: !FSD
+ 129.490418	[D1] upsdrv_updateinfo...
+ 129.490521	[D1] Quick update...
+ 129.490559	[D3] send: Q1
+ 129.490592	[D4] command index: 0x03
+ 129.991122	[D3] interrupt_read: No error (-110)
+ 130.008508	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 130.008636	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 130.008670	[D5]  30 30 30 0d
+ 130.008700	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 130.008738	[D5] update_status: OL
+ 130.008848	[D5] update_status: !LB
+ 130.008893	[D5] update_status: !CAL
+ 130.008930	[D5] update_status: !FSD
+ 131.492147	[D1] upsdrv_updateinfo...
+ 131.492261	[D1] Quick update...
+ 131.492299	[D3] send: Q1
+ 131.492332	[D4] command index: 0x03
+ 131.993577	[D3] interrupt_read: No error (-110)
+ 132.010626	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 132.010753	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 132.010788	[D5]  30 30 30 0d
+ 132.010818	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 132.010856	[D5] update_status: OL
+ 132.010893	[D5] update_status: !LB
+ 132.010935	[D5] update_status: !CAL
+ 132.010970	[D5] update_status: !FSD
+ 133.493875	[D1] upsdrv_updateinfo...
+ 133.493981	[D1] Quick update...
+ 133.494019	[D3] send: Q1
+ 133.494052	[D4] command index: 0x03
+ 133.995088	[D3] interrupt_read: No error (-110)
+ 134.012615	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 134.012742	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 134.012849	[D5]  30 30 30 0d
+ 134.012882	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 134.012921	[D5] update_status: OL
+ 134.012958	[D5] update_status: !LB
+ 134.012998	[D5] update_status: !CAL
+ 134.013034	[D5] update_status: !FSD
+ 135.495607	[D1] upsdrv_updateinfo...
+ 135.495712	[D1] Quick update...
+ 135.495751	[D3] send: Q1
+ 135.495784	[D4] command index: 0x03
+ 135.996553	[D3] interrupt_read: No error (-110)
+ 136.013611	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 136.013741	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 136.013780	[D5]  30 30 30 0d
+ 136.013813	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 136.013854	[D5] update_status: OL
+ 136.013895	[D5] update_status: !LB
+ 136.013939	[D5] update_status: !CAL
+ 136.013977	[D5] update_status: !FSD
+ 137.497336	[D1] upsdrv_updateinfo...
+ 137.497455	[D1] Full update...
+ 137.497497	[D3] send: Q1
+ 137.497534	[D4] command index: 0x03
+ 137.998521	[D3] interrupt_read: No error (-110)
+ 138.015594	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 138.015725	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 138.015764	[D5]  30 30 30 0d
+ 138.015797	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 138.015911	[D5] update_status: OL
+ 138.015951	[D5] update_status: !LB
+ 138.015999	[D5] update_status: !CAL
+ 138.016037	[D5] update_status: !FSD
+ 139.499065	[D1] upsdrv_updateinfo...
+ 139.499174	[D1] Quick update...
+ 139.499268	[D3] send: Q1
+ 139.499305	[D4] command index: 0x03
+ 140.000639	[D3] interrupt_read: No error (-110)
+ 140.017475	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 140.017601	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 140.017635	[D5]  30 30 30 0d
+ 140.017666	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 140.017704	[D5] update_status: OL
+ 140.017741	[D5] update_status: !LB
+ 140.017782	[D5] update_status: !CAL
+ 140.017817	[D5] update_status: !FSD
+ 141.500838	[D1] upsdrv_updateinfo...
+ 141.500943	[D1] Quick update...
+ 141.500980	[D3] send: Q1
+ 141.501014	[D4] command index: 0x03
+ 142.001271	[D3] interrupt_read: No error (-110)
+ 142.018446	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 142.018575	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 142.018610	[D5]  30 30 30 0d
+ 142.018640	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 142.018679	[D5] update_status: OL
+ 142.018717	[D5] update_status: !LB
+ 142.018759	[D5] update_status: !CAL
+ 142.018796	[D5] update_status: !FSD
+ 143.501063	[D1] upsdrv_updateinfo...
+ 143.501175	[D1] Quick update...
+ 143.501213	[D3] send: Q1
+ 143.501246	[D4] command index: 0x03
+ 144.002400	[D3] interrupt_read: No error (-110)
+ 144.019576	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 144.019704	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 144.019738	[D5]  30 30 30 0d
+ 144.019768	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 144.019807	[D5] update_status: OL
+ 144.019843	[D5] update_status: !LB
+ 144.019884	[D5] update_status: !CAL
+ 144.019919	[D5] update_status: !FSD
+ 145.502792	[D1] upsdrv_updateinfo...
+ 145.502897	[D1] Quick update...
+ 145.502935	[D3] send: Q1
+ 145.502968	[D4] command index: 0x03
+ 146.003398	[D3] interrupt_read: No error (-110)
+ 146.020425	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 146.020554	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 146.020588	[D5]  30 30 30 0d
+ 146.020620	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 146.020658	[D5] update_status: OL
+ 146.020696	[D5] update_status: !LB
+ 146.020737	[D5] update_status: !CAL
+ 146.020843	[D5] update_status: !FSD
+ 147.504523	[D1] upsdrv_updateinfo...
+ 147.504628	[D1] Quick update...
+ 147.504666	[D3] send: Q1
+ 147.504699	[D4] command index: 0x03
+ 148.005595	[D3] interrupt_read: No error (-110)
+ 148.022409	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 148.022537	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 148.022572	[D5]  30 30 30 0d
+ 148.022602	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 148.022641	[D5] update_status: OL
+ 148.022678	[D5] update_status: !LB
+ 148.022720	[D5] update_status: !CAL
+ 148.022756	[D5] update_status: !FSD
+ 149.506261	[D1] upsdrv_updateinfo...
+ 149.506374	[D1] Quick update...
+ 149.506413	[D3] send: Q1
+ 149.506446	[D4] command index: 0x03
+ 150.007563	[D3] interrupt_read: No error (-110)
+ 150.024402	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 150.024531	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 150.024565	[D5]  30 30 30 0d
+ 150.024595	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 150.024634	[D5] update_status: OL
+ 150.024672	[D5] update_status: !LB
+ 150.024713	[D5] update_status: !CAL
+ 150.024749	[D5] update_status: !FSD
+ 151.507998	[D1] upsdrv_updateinfo...
+ 151.508102	[D1] Quick update...
+ 151.508140	[D3] send: Q1
+ 151.508173	[D4] command index: 0x03
+ 152.009340	[D3] interrupt_read: No error (-110)
+ 152.026387	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 152.026516	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 152.026551	[D5]  30 30 30 0d
+ 152.026582	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 152.026621	[D5] update_status: OL
+ 152.026701	[D5] update_status: !LB
+ 152.026746	[D5] update_status: !CAL
+ 152.026783	[D5] update_status: !FSD
+ 153.509736	[D1] upsdrv_updateinfo...
+ 153.509840	[D1] Quick update...
+ 153.509879	[D3] send: Q1
+ 153.509912	[D4] command index: 0x03
+ 154.010515	[D3] interrupt_read: No error (-110)
+ 154.027510	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 154.027638	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 154.027672	[D5]  30 30 30 0d
+ 154.027702	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 154.027740	[D5] update_status: OL
+ 154.027777	[D5] update_status: !LB
+ 154.027818	[D5] update_status: !CAL
+ 154.027853	[D5] update_status: !FSD
+ 155.511473	[D1] upsdrv_updateinfo...
+ 155.511587	[D1] Quick update...
+ 155.511625	[D3] send: Q1
+ 155.511658	[D4] command index: 0x03
+ 156.012734	[D3] interrupt_read: No error (-110)
+ 156.029374	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 156.029502	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 156.029537	[D5]  30 30 30 0d
+ 156.029569	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 156.029607	[D5] update_status: OL
+ 156.029645	[D5] update_status: !LB
+ 156.029686	[D5] update_status: !CAL
+ 156.029722	[D5] update_status: !FSD
+ 157.513082	[D1] upsdrv_updateinfo...
+ 157.513188	[D1] Quick update...
+ 157.513226	[D3] send: Q1
+ 157.513259	[D4] command index: 0x03
+ 158.013995	[D3] interrupt_read: No error (-110)
+ 158.031490	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 158.031617	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 158.031652	[D5]  30 30 30 0d
+ 158.031682	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 158.031721	[D5] update_status: OL
+ 158.031757	[D5] update_status: !LB
+ 158.031798	[D5] update_status: !CAL
+ 158.031833	[D5] update_status: !FSD
+ 159.514818	[D1] upsdrv_updateinfo...
+ 159.514922	[D1] Quick update...
+ 159.514960	[D3] send: Q1
+ 159.514994	[D4] command index: 0x03
+ 160.015516	[D3] interrupt_read: No error (-110)
+ 160.032352	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 160.032481	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 160.032516	[D5]  30 30 30 0d
+ 160.032547	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 160.032585	[D5] update_status: OL
+ 160.032622	[D5] update_status: !LB
+ 160.032663	[D5] update_status: !CAL
+ 160.032699	[D5] update_status: !FSD
+ 161.516427	[D1] upsdrv_updateinfo...
+ 161.516542	[D1] Quick update...
+ 161.516581	[D3] send: Q1
+ 161.516614	[D4] command index: 0x03
+ 162.017201	[D3] interrupt_read: No error (-110)
+ 162.034336	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 162.034464	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 162.034499	[D5]  30 30 30 0d
+ 162.034530	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 162.034569	[D5] update_status: OL
+ 162.034607	[D5] update_status: !LB
+ 162.034649	[D5] update_status: !CAL
+ 162.034685	[D5] update_status: !FSD
+ 163.518163	[D1] upsdrv_updateinfo...
+ 163.518266	[D1] Quick update...
+ 163.518304	[D3] send: Q1
+ 163.518337	[D4] command index: 0x03
+ 164.018938	[D3] interrupt_read: No error (-110)
+ 164.036325	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 164.036456	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 164.036491	[D5]  30 30 30 0d
+ 164.036521	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 164.036560	[D5] update_status: OL
+ 164.036598	[D5] update_status: !LB
+ 164.036638	[D5] update_status: !CAL
+ 164.036674	[D5] update_status: !FSD
+ 165.519897	[D1] upsdrv_updateinfo...
+ 165.520002	[D1] Quick update...
+ 165.520040	[D3] send: Q1
+ 165.520073	[D4] command index: 0x03
+ 166.021426	[D3] interrupt_read: No error (-110)
+ 166.038266	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 166.038332	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 166.038411	[D5]  30 30 30 0d
+ 166.038443	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 166.038482	[D5] update_status: OL
+ 166.038519	[D5] update_status: !LB
+ 166.038560	[D5] update_status: !CAL
+ 166.038595	[D5] update_status: !FSD
+ 167.521452	[D1] upsdrv_updateinfo...
+ 167.521565	[D1] Quick update...
+ 167.521603	[D3] send: Q1
+ 167.521636	[D4] command index: 0x03
+ 168.022628	[D3] interrupt_read: No error (-110)
+ 168.039303	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 168.039432	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 168.039468	[D5]  30 30 30 0d
+ 168.039498	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 168.039536	[D5] update_status: OL
+ 168.039574	[D5] update_status: !LB
+ 168.039616	[D5] update_status: !CAL
+ 168.039652	[D5] update_status: !FSD
+ 169.523059	[D1] upsdrv_updateinfo...
+ 169.523164	[D1] Full update...
+ 169.523203	[D3] send: Q1
+ 169.523236	[D4] command index: 0x03
+ 170.024298	[D3] interrupt_read: No error (-110)
+ 170.041474	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 170.041603	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 170.041638	[D5]  30 30 30 0d
+ 170.041668	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 170.041778	[D5] update_status: OL
+ 170.041814	[D5] update_status: !LB
+ 170.041858	[D5] update_status: !CAL
+ 170.041893	[D5] update_status: !FSD
+ 171.524756	[D1] upsdrv_updateinfo...
+ 171.524930	[D1] Quick update...
+ 171.524973	[D3] send: Q1
+ 171.525010	[D4] command index: 0x03
+ 172.025734	[D3] interrupt_read: No error (-110)
+ 172.043282	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 172.043415	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 172.043454	[D5]  30 30 30 0d
+ 172.043488	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 172.043531	[D5] update_status: OL
+ 172.043573	[D5] update_status: !LB
+ 172.043618	[D5] update_status: !CAL
+ 172.043656	[D5] update_status: !FSD
+ 173.526310	[D1] upsdrv_updateinfo...
+ 173.526424	[D1] Quick update...
+ 173.526466	[D3] send: Q1
+ 173.526503	[D4] command index: 0x03
+ 174.027295	[D3] interrupt_read: No error (-110)
+ 174.044269	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 174.044401	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 174.044440	[D5]  30 30 30 0d
+ 174.044474	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 174.044516	[D5] update_status: OL
+ 174.044558	[D5] update_status: !LB
+ 174.044603	[D5] update_status: !CAL
+ 174.044642	[D5] update_status: !FSD
+ 175.527873	[D1] upsdrv_updateinfo...
+ 175.527978	[D1] Quick update...
+ 175.528020	[D3] send: Q1
+ 175.528058	[D4] command index: 0x03
+ 176.028922	[D3] interrupt_read: No error (-110)
+ 176.046266	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 176.046400	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 176.046439	[D5]  30 30 30 0d
+ 176.046473	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 176.046515	[D5] update_status: OL
+ 176.046556	[D5] update_status: !LB
+ 176.046601	[D5] update_status: !CAL
+ 176.046640	[D5] update_status: !FSD
+ 177.529608	[D1] upsdrv_updateinfo...
+ 177.529717	[D1] Quick update...
+ 177.529758	[D3] send: Q1
+ 177.529794	[D4] command index: 0x03
+ 178.030807	[D3] interrupt_read: No error (-110)
+ 178.048179	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 178.048311	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 178.048350	[D5]  30 30 30 0d
+ 178.048384	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 178.048427	[D5] update_status: OL
+ 178.048469	[D5] update_status: !LB
+ 178.048515	[D5] update_status: !CAL
+ 178.048555	[D5] update_status: !FSD
+ 179.531340	[D1] upsdrv_updateinfo...
+ 179.531458	[D1] Quick update...
+ 179.531500	[D3] send: Q1
+ 179.531536	[D4] command index: 0x03
+ 180.031881	[D3] interrupt_read: No error (-110)
+ 180.049382	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 180.049509	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 180.049544	[D5]  30 30 30 0d
+ 180.049574	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 180.049612	[D5] update_status: OL
+ 180.049649	[D5] update_status: !LB
+ 180.049690	[D5] update_status: !CAL
+ 180.049725	[D5] update_status: !FSD
+ 181.533074	[D1] upsdrv_updateinfo...
+ 181.533178	[D1] Quick update...
+ 181.533216	[D3] send: Q1
+ 181.533249	[D4] command index: 0x03
+ 182.034351	[D3] interrupt_read: No error (-110)
+ 182.051232	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 182.051360	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 182.051395	[D5]  30 30 30 0d
+ 182.051426	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 182.051465	[D5] update_status: OL
+ 182.051503	[D5] update_status: !LB
+ 182.051544	[D5] update_status: !CAL
+ 182.051580	[D5] update_status: !FSD
+ 183.534769	[D1] upsdrv_updateinfo...
+ 183.534874	[D1] Quick update...
+ 183.534912	[D3] send: Q1
+ 183.534945	[D4] command index: 0x03
+ 184.036018	[D3] interrupt_read: No error (-110)
+ 184.053358	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 184.053487	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 184.053522	[D5]  30 30 30 0d
+ 184.053552	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 184.053590	[D5] update_status: OL
+ 184.053627	[D5] update_status: !LB
+ 184.053668	[D5] update_status: !CAL
+ 184.053703	[D5] update_status: !FSD
+ 185.536502	[D1] upsdrv_updateinfo...
+ 185.536615	[D1] Quick update...
+ 185.536653	[D3] send: Q1
+ 185.536687	[D4] command index: 0x03
+ 186.037903	[D3] interrupt_read: No error (-110)
+ 186.055207	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 186.055336	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 186.055371	[D5]  30 30 30 0d
+ 186.055401	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 186.055439	[D5] update_status: OL
+ 186.055476	[D5] update_status: !LB
+ 186.055517	[D5] update_status: !CAL
+ 186.055552	[D5] update_status: !FSD
+ 187.538238	[D1] upsdrv_updateinfo...
+ 187.538343	[D1] Quick update...
+ 187.538381	[D3] send: Q1
+ 187.538414	[D4] command index: 0x03
+ 188.038905	[D3] interrupt_read: No error (-110)
+ 188.056196	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 188.056326	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 188.056361	[D5]  30 30 30 0d
+ 188.056392	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 188.056432	[D5] update_status: OL
+ 188.056469	[D5] update_status: !LB
+ 188.056511	[D5] update_status: !CAL
+ 188.056547	[D5] update_status: !FSD
+ 189.539973	[D1] upsdrv_updateinfo...
+ 189.540078	[D1] Quick update...
+ 189.540115	[D3] send: Q1
+ 189.540149	[D4] command index: 0x03
+ 190.041427	[D3] interrupt_read: No error (-110)
+ 190.058318	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 190.058445	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 190.058479	[D5]  30 30 30 0d
+ 190.058509	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 190.058546	[D5] update_status: OL
+ 190.058583	[D5] update_status: !LB
+ 190.058624	[D5] update_status: !CAL
+ 190.058659	[D5] update_status: !FSD
+ 191.541706	[D1] upsdrv_updateinfo...
+ 191.541820	[D1] Quick update...
+ 191.541858	[D3] send: Q1
+ 191.541891	[D4] command index: 0x03
+ 192.042684	[D3] interrupt_read: No error (-110)
+ 192.060315	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 192.060441	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 192.060476	[D5]  30 30 30 0d
+ 192.060506	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 192.060544	[D5] update_status: OL
+ 192.060581	[D5] update_status: !LB
+ 192.060667	[D5] update_status: !CAL
+ 192.060705	[D5] update_status: !FSD
+ 193.543440	[D1] upsdrv_updateinfo...
+ 193.543545	[D1] Quick update...
+ 193.543583	[D3] send: Q1
+ 193.543616	[D4] command index: 0x03
+ 194.044908	[D3] interrupt_read: No error (-110)
+ 194.062298	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 194.062426	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 194.062460	[D5]  30 30 30 0d
+ 194.062490	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 194.062529	[D5] update_status: OL
+ 194.062566	[D5] update_status: !LB
+ 194.062606	[D5] update_status: !CAL
+ 194.062642	[D5] update_status: !FSD
+ 195.545049	[D1] upsdrv_updateinfo...
+ 195.545158	[D1] Quick update...
+ 195.545196	[D3] send: Q1
+ 195.545229	[D4] command index: 0x03
+ 196.046083	[D3] interrupt_read: No error (-110)
+ 196.063290	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 196.063417	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 196.063451	[D5]  30 30 30 0d
+ 196.063482	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 196.063520	[D5] update_status: OL
+ 196.063557	[D5] update_status: !LB
+ 196.063597	[D5] update_status: !CAL
+ 196.063633	[D5] update_status: !FSD
+ 197.546770	[D1] upsdrv_updateinfo...
+ 197.546884	[D1] Quick update...
+ 197.546922	[D3] send: Q1
+ 197.546956	[D4] command index: 0x03
+ 198.047569	[D3] interrupt_read: No error (-110)
+ 198.064148	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 198.064276	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 198.064311	[D5]  30 30 30 0d
+ 198.064343	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 198.064382	[D5] update_status: OL
+ 198.064420	[D5] update_status: !LB
+ 198.064462	[D5] update_status: !CAL
+ 198.064498	[D5] update_status: !FSD
+ 199.548506	[D1] upsdrv_updateinfo...
+ 199.548611	[D1] Quick update...
+ 199.548649	[D3] send: Q1
+ 199.548682	[D4] command index: 0x03
+ 200.049744	[D3] interrupt_read: No error (-110)
+ 200.067139	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 200.067268	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 200.067302	[D5]  30 30 30 0d
+ 200.067333	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 200.067372	[D5] update_status: OL
+ 200.067409	[D5] update_status: !LB
+ 200.067451	[D5] update_status: !CAL
+ 200.067487	[D5] update_status: !FSD
+ 201.550242	[D1] upsdrv_updateinfo...
+ 201.550347	[D1] Full update...
+ 201.550385	[D3] send: Q1
+ 201.550418	[D4] command index: 0x03
+ 202.051127	[D3] interrupt_read: No error (-110)
+ 202.068128	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 202.068256	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 202.068291	[D5]  30 30 30 0d
+ 202.068322	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 202.068436	[D5] update_status: OL
+ 202.068472	[D5] update_status: !LB
+ 202.068517	[D5] update_status: !CAL
+ 202.068553	[D5] update_status: !FSD
+ 203.551977	[D1] upsdrv_updateinfo...
+ 203.552092	[D1] Quick update...
+ 203.552129	[D3] send: Q1
+ 203.552163	[D4] command index: 0x03
+ 204.053535	[D3] interrupt_read: No error (-110)
+ 204.070118	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 204.070247	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 204.070281	[D5]  30 30 30 0d
+ 204.070311	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 204.070349	[D5] update_status: OL
+ 204.070386	[D5] update_status: !LB
+ 204.070426	[D5] update_status: !CAL
+ 204.070461	[D5] update_status: !FSD
+ 205.553711	[D1] upsdrv_updateinfo...
+ 205.553816	[D1] Quick update...
+ 205.553854	[D3] send: Q1
+ 205.553887	[D4] command index: 0x03
+ 206.054797	[D3] interrupt_read: No error (-110)
+ 206.072104	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 206.072236	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 206.072322	[D5]  30 30 30 0d
+ 206.072355	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 206.072394	[D5] update_status: OL
+ 206.072432	[D5] update_status: !LB
+ 206.072475	[D5] update_status: !CAL
+ 206.072510	[D5] update_status: !FSD
+ 207.555448	[D1] upsdrv_updateinfo...
+ 207.555553	[D1] Quick update...
+ 207.555591	[D3] send: Q1
+ 207.555625	[D4] command index: 0x03
+ 208.056917	[D3] interrupt_read: No error (-110)
+ 208.074091	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 208.074220	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 208.074255	[D5]  30 30 30 0d
+ 208.074286	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 208.074324	[D5] update_status: OL
+ 208.074362	[D5] update_status: !LB
+ 208.074403	[D5] update_status: !CAL
+ 208.074439	[D5] update_status: !FSD
+ 209.557180	[D1] upsdrv_updateinfo...
+ 209.557294	[D1] Quick update...
+ 209.557332	[D3] send: Q1
+ 209.557365	[D4] command index: 0x03
+ 210.058417	[D3] interrupt_read: No error (-110)
+ 210.075080	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 210.075210	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 210.075244	[D5]  30 30 30 0d
+ 210.075276	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 210.075314	[D5] update_status: OL
+ 210.075352	[D5] update_status: !LB
+ 210.075393	[D5] update_status: !CAL
+ 210.075430	[D5] update_status: !FSD
+ 211.558914	[D1] upsdrv_updateinfo...
+ 211.559018	[D1] Quick update...
+ 211.559056	[D3] send: Q1
+ 211.559089	[D4] command index: 0x03
+ 212.060419	[D3] interrupt_read: No error (-110)
+ 212.077205	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 212.077332	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 212.077366	[D5]  30 30 30 0d
+ 212.077396	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 212.077434	[D5] update_status: OL
+ 212.077471	[D5] update_status: !LB
+ 212.077512	[D5] update_status: !CAL
+ 212.077548	[D5] update_status: !FSD
+ 213.560648	[D1] upsdrv_updateinfo...
+ 213.560753	[D1] Quick update...
+ 213.560830	[D3] send: Q1
+ 213.560864	[D4] command index: 0x03
+ 214.061773	[D3] interrupt_read: No error (-110)
+ 214.079059	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 214.079187	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 214.079222	[D5]  30 30 30 0d
+ 214.079252	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 214.079291	[D5] update_status: OL
+ 214.079329	[D5] update_status: !LB
+ 214.079369	[D5] update_status: !CAL
+ 214.079405	[D5] update_status: !FSD
+ 215.562377	[D1] upsdrv_updateinfo...
+ 215.562490	[D1] Quick update...
+ 215.562529	[D3] send: Q1
+ 215.562562	[D4] command index: 0x03
+ 216.063127	[D3] interrupt_read: No error (-110)
+ 216.080049	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 216.080178	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 216.080213	[D5]  30 30 30 0d
+ 216.080244	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 216.080284	[D5] update_status: OL
+ 216.080322	[D5] update_status: !LB
+ 216.080363	[D5] update_status: !CAL
+ 216.080399	[D5] update_status: !FSD
+ 217.563999	[D1] upsdrv_updateinfo...
+ 217.564106	[D1] Quick update...
+ 217.564144	[D3] send: Q1
+ 217.564177	[D4] command index: 0x03
+ 218.064863	[D3] interrupt_read: No error (-110)
+ 218.082169	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 218.082297	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 218.082332	[D5]  30 30 30 0d
+ 218.082362	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 218.082400	[D5] update_status: OL
+ 218.082438	[D5] update_status: !LB
+ 218.082479	[D5] update_status: !CAL
+ 218.082514	[D5] update_status: !FSD
+ 219.565076	[D1] upsdrv_updateinfo...
+ 219.565187	[D1] Quick update...
+ 219.565225	[D3] send: Q1
+ 219.565259	[D4] command index: 0x03
+ 220.065740	[D3] interrupt_read: No error (-110)
+ 220.083027	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 220.083156	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 220.083191	[D5]  30 30 30 0d
+ 220.083221	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 220.083260	[D5] update_status: OL
+ 220.083297	[D5] update_status: !LB
+ 220.083339	[D5] update_status: !CAL
+ 220.083375	[D5] update_status: !FSD
+ 221.566638	[D1] upsdrv_updateinfo...
+ 221.566748	[D1] Quick update...
+ 221.566787	[D3] send: Q1
+ 221.566819	[D4] command index: 0x03
+ 222.067839	[D3] interrupt_read: No error (-110)
+ 222.085018	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 222.085148	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 222.085184	[D5]  30 30 30 0d
+ 222.085214	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 222.085253	[D5] update_status: OL
+ 222.085291	[D5] update_status: !LB
+ 222.085333	[D5] update_status: !CAL
+ 222.085369	[D5] update_status: !FSD
+ 223.568363	[D1] upsdrv_updateinfo...
+ 223.568467	[D1] Quick update...
+ 223.568505	[D3] send: Q1
+ 223.568538	[D4] command index: 0x03
+ 224.069013	[D3] interrupt_read: No error (-110)
+ 224.086047	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 224.086176	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 224.086210	[D5]  30 30 30 0d
+ 224.086242	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 224.086280	[D5] update_status: OL
+ 224.086318	[D5] update_status: !LB
+ 224.086359	[D5] update_status: !CAL
+ 224.086395	[D5] update_status: !FSD
+ 225.570110	[D1] upsdrv_updateinfo...
+ 225.570220	[D1] Quick update...
+ 225.570258	[D3] send: Q1
+ 225.570291	[D4] command index: 0x03
+ 226.071421	[D3] interrupt_read: No error (-110)
+ 226.088998	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 226.089126	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 226.089161	[D5]  30 30 30 0d
+ 226.089193	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 226.089232	[D5] update_status: OL
+ 226.089269	[D5] update_status: !LB
+ 226.089311	[D5] update_status: !CAL
+ 226.089347	[D5] update_status: !FSD
+ 227.571841	[D1] upsdrv_updateinfo...
+ 227.571955	[D1] Quick update...
+ 227.571993	[D3] send: Q1
+ 227.572026	[D4] command index: 0x03
+ 228.073383	[D3] interrupt_read: No error (-110)
+ 228.089984	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 228.090111	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 228.090145	[D5]  30 30 30 0d
+ 228.090177	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 228.090216	[D5] update_status: OL
+ 228.090254	[D5] update_status: !LB
+ 228.090295	[D5] update_status: !CAL
+ 228.090332	[D5] update_status: !FSD
+ 229.573571	[D1] upsdrv_updateinfo...
+ 229.573676	[D1] Quick update...
+ 229.573714	[D3] send: Q1
+ 229.573747	[D4] command index: 0x03
+ 230.074417	[D3] interrupt_read: No error (-110)
+ 230.092113	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 230.092241	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 230.092276	[D5]  30 30 30 0d
+ 230.092306	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 230.092344	[D5] update_status: OL
+ 230.092381	[D5] update_status: !LB
+ 230.092422	[D5] update_status: !CAL
+ 230.092458	[D5] update_status: !FSD
+ 231.575319	[D1] upsdrv_updateinfo...
+ 231.575431	[D1] Quick update...
+ 231.575469	[D3] send: Q1
+ 231.575503	[D4] command index: 0x03
+ 232.075921	[D3] interrupt_read: No error (-110)
+ 232.093101	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 232.093228	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 232.093263	[D5]  30 30 30 0d
+ 232.093293	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 232.093332	[D5] update_status: OL
+ 232.093369	[D5] update_status: !LB
+ 232.093410	[D5] update_status: !CAL
+ 232.093445	[D5] update_status: !FSD
+ 233.577049	[D1] upsdrv_updateinfo...
+ 233.577163	[D1] Full update...
+ 233.577201	[D3] send: Q1
+ 233.577234	[D4] command index: 0x03
+ 234.077820	[D3] interrupt_read: No error (-110)
+ 234.095090	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 234.095218	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 234.095253	[D5]  30 30 30 0d
+ 234.095283	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 234.095393	[D5] update_status: OL
+ 234.095429	[D5] update_status: !LB
+ 234.095473	[D5] update_status: !CAL
+ 234.095507	[D5] update_status: !FSD
+ 235.578781	[D1] upsdrv_updateinfo...
+ 235.578886	[D1] Quick update...
+ 235.578924	[D3] send: Q1
+ 235.578958	[D4] command index: 0x03
+ 236.079551	[D3] interrupt_read: No error (-110)
+ 236.097158	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 236.097290	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 236.097326	[D5]  30 30 30 0d
+ 236.097357	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 236.097395	[D5] update_status: OL
+ 236.097432	[D5] update_status: !LB
+ 236.097473	[D5] update_status: !CAL
+ 236.097508	[D5] update_status: !FSD
+ 237.580517	[D1] upsdrv_updateinfo...
+ 237.580621	[D1] Quick update...
+ 237.580659	[D3] send: Q1
+ 237.580692	[D4] command index: 0x03
+ 238.081923	[D3] interrupt_read: No error (-110)
+ 238.098894	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 238.099024	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 238.099058	[D5]  30 30 30 0d
+ 238.099089	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 238.099128	[D5] update_status: OL
+ 238.099166	[D5] update_status: !LB
+ 238.099207	[D5] update_status: !CAL
+ 238.099243	[D5] update_status: !FSD
+ 239.582252	[D1] upsdrv_updateinfo...
+ 239.582365	[D1] Quick update...
+ 239.582403	[D3] send: Q1
+ 239.582436	[D4] command index: 0x03
+ 240.083054	[D3] interrupt_read: No error (-110)
+ 240.100018	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 240.100146	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 240.100181	[D5]  30 30 30 0d
+ 240.100211	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 240.100249	[D5] update_status: OL
+ 240.100286	[D5] update_status: !LB
+ 240.100326	[D5] update_status: !CAL
+ 240.100361	[D5] update_status: !FSD
+ 241.583848	[D1] upsdrv_updateinfo...
+ 241.583961	[D1] Quick update...
+ 241.584004	[D3] send: Q1
+ 241.584042	[D4] command index: 0x03
+ 242.085060	[D3] interrupt_read: No error (-110)
+ 242.101995	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 242.102128	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 242.102167	[D5]  30 30 30 0d
+ 242.102200	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 242.102241	[D5] update_status: OL
+ 242.102281	[D5] update_status: !LB
+ 242.102325	[D5] update_status: !CAL
+ 242.102363	[D5] update_status: !FSD
+ 243.585071	[D1] upsdrv_updateinfo...
+ 243.585186	[D1] Quick update...
+ 243.585227	[D3] send: Q1
+ 243.585264	[D4] command index: 0x03
+ 244.085960	[D3] interrupt_read: No error (-110)
+ 244.102875	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 244.103008	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 244.103047	[D5]  30 30 30 0d
+ 244.103081	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 244.103123	[D5] update_status: OL
+ 244.103164	[D5] update_status: !LB
+ 244.103208	[D5] update_status: !CAL
+ 244.103247	[D5] update_status: !FSD
+ 245.586788	[D1] upsdrv_updateinfo...
+ 245.586906	[D1] Quick update...
+ 245.586948	[D3] send: Q1
+ 245.586984	[D4] command index: 0x03
+ 246.088260	[D3] interrupt_read: No error (-110)
+ 246.105012	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 246.105145	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 246.105184	[D5]  30 30 30 0d
+ 246.105268	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 246.105309	[D5] update_status: OL
+ 246.105346	[D5] update_status: !LB
+ 246.105387	[D5] update_status: !CAL
+ 246.105422	[D5] update_status: !FSD
+ 247.588389	[D1] upsdrv_updateinfo...
+ 247.588494	[D1] Quick update...
+ 247.588533	[D3] send: Q1
+ 247.588566	[D4] command index: 0x03
+ 248.088868	[D3] interrupt_read: No error (-110)
+ 248.106006	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 248.106134	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 248.106169	[D5]  30 30 30 0d
+ 248.106200	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 248.106238	[D5] update_status: OL
+ 248.106274	[D5] update_status: !LB
+ 248.106315	[D5] update_status: !CAL
+ 248.106350	[D5] update_status: !FSD
+ 249.588959	[D1] upsdrv_updateinfo...
+ 249.589070	[D1] Quick update...
+ 249.589109	[D3] send: Q1
+ 249.589142	[D4] command index: 0x03
+ 250.090209	[D3] interrupt_read: No error (-110)
+ 250.107007	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 250.107134	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 250.107169	[D5]  30 30 30 0d
+ 250.107200	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 250.107238	[D5] update_status: OL
+ 250.107275	[D5] update_status: !LB
+ 250.107315	[D5] update_status: !CAL
+ 250.107350	[D5] update_status: !FSD
+ 251.590559	[D1] upsdrv_updateinfo...
+ 251.590674	[D1] Quick update...
+ 251.590713	[D3] send: Q1
+ 251.590746	[D4] command index: 0x03
+ 252.090975	[D3] interrupt_read: No error (-110)
+ 252.107999	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 252.108127	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 252.108162	[D5]  30 30 30 0d
+ 252.108192	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 252.108230	[D5] update_status: OL
+ 252.108267	[D5] update_status: !LB
+ 252.108308	[D5] update_status: !CAL
+ 252.108343	[D5] update_status: !FSD
+ 253.592162	[D1] upsdrv_updateinfo...
+ 253.592267	[D1] Quick update...
+ 253.592305	[D3] send: Q1
+ 253.592339	[D4] command index: 0x03
+ 254.092843	[D3] interrupt_read: No error (-110)
+ 254.109974	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 254.110102	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 254.110137	[D5]  30 30 30 0d
+ 254.110168	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 254.110206	[D5] update_status: OL
+ 254.110243	[D5] update_status: !LB
+ 254.110284	[D5] update_status: !CAL
+ 254.110319	[D5] update_status: !FSD
+ 255.593762	[D1] upsdrv_updateinfo...
+ 255.593868	[D1] Quick update...
+ 255.593906	[D3] send: Q1
+ 255.593941	[D4] command index: 0x03
+ 256.095091	[D3] interrupt_read: No error (-110)
+ 256.111978	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 256.112105	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 256.112140	[D5]  30 30 30 0d
+ 256.112170	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 256.112208	[D5] update_status: OL
+ 256.112246	[D5] update_status: !LB
+ 256.112286	[D5] update_status: !CAL
+ 256.112322	[D5] update_status: !FSD
+ 257.595489	[D1] upsdrv_updateinfo...
+ 257.595602	[D1] Quick update...
+ 257.595640	[D3] send: Q1
+ 257.595673	[D4] command index: 0x03
+ 258.096877	[D3] interrupt_read: No error (-110)
+ 258.113838	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 258.113966	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 258.114002	[D5]  30 30 30 0d
+ 258.114033	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 258.114072	[D5] update_status: OL
+ 258.114110	[D5] update_status: !LB
+ 258.114152	[D5] update_status: !CAL
+ 258.114188	[D5] update_status: !FSD
+ 259.596995	[D1] upsdrv_updateinfo...
+ 259.597097	[D1] Quick update...
+ 259.597135	[D3] send: Q1
+ 259.597169	[D4] command index: 0x03
+ 260.097452	[D3] interrupt_read: No error (-110)
+ 260.114951	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 260.115124	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 260.115162	[D5]  30 30 30 0d
+ 260.115192	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 260.115230	[D5] update_status: OL
+ 260.115266	[D5] update_status: !LB
+ 260.115307	[D5] update_status: !CAL
+ 260.115342	[D5] update_status: !FSD
+ 261.598553	[D1] upsdrv_updateinfo...
+ 261.598654	[D1] Quick update...
+ 261.598692	[D3] send: Q1
+ 261.598726	[D4] command index: 0x03
+ 262.099831	[D3] interrupt_read: No error (-110)
+ 262.116869	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 262.116998	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 262.117033	[D5]  30 30 30 0d
+ 262.117063	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 262.117102	[D5] update_status: OL
+ 262.117140	[D5] update_status: !LB
+ 262.117180	[D5] update_status: !CAL
+ 262.117216	[D5] update_status: !FSD
+ 263.600110	[D1] upsdrv_updateinfo...
+ 263.600219	[D1] Quick update...
+ 263.600258	[D3] send: Q1
+ 263.600291	[D4] command index: 0x03
+ 264.101317	[D3] interrupt_read: No error (-110)
+ 264.118799	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 264.118926	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 264.118961	[D5]  30 30 30 0d
+ 264.118992	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 264.119030	[D5] update_status: OL
+ 264.119068	[D5] update_status: !LB
+ 264.119109	[D5] update_status: !CAL
+ 264.119145	[D5] update_status: !FSD
+ 265.600905	[D1] upsdrv_updateinfo...
+ 265.601008	[D1] Full update...
+ 265.601047	[D3] send: Q1
+ 265.601081	[D4] command index: 0x03
+ 266.101530	[D3] interrupt_read: No error (-110)
+ 266.118913	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 266.119040	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 266.119075	[D5]  30 30 30 0d
+ 266.119105	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 266.119215	[D5] update_status: OL
+ 266.119250	[D5] update_status: !LB
+ 266.119295	[D5] update_status: !CAL
+ 266.119330	[D5] update_status: !FSD
+ 267.602507	[D1] upsdrv_updateinfo...
+ 267.602612	[D1] Quick update...
+ 267.602651	[D3] send: Q1
+ 267.602684	[D4] command index: 0x03
+ 268.103781	[D3] interrupt_read: No error (-110)
+ 268.120843	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 268.120970	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 268.121006	[D5]  30 30 30 0d
+ 268.121037	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 268.121077	[D5] update_status: OL
+ 268.121114	[D5] update_status: !LB
+ 268.121156	[D5] update_status: !CAL
+ 268.121192	[D5] update_status: !FSD
+ 269.604144	[D1] upsdrv_updateinfo...
+ 269.604257	[D1] Quick update...
+ 269.604295	[D3] send: Q1
+ 269.604328	[D4] command index: 0x03
+ 270.104704	[D3] interrupt_read: No error (-110)
+ 270.121700	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 270.121979	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 270.122127	[D5]  30 30 30 0d
+ 270.122162	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 270.122201	[D5] update_status: OL
+ 270.122238	[D5] update_status: !LB
+ 270.122279	[D5] update_status: !CAL
+ 270.122315	[D5] update_status: !FSD
+ 271.605854	[D1] upsdrv_updateinfo...
+ 271.605960	[D1] Quick update...
+ 271.605997	[D3] send: Q1
+ 271.606031	[D4] command index: 0x03
+ 272.106757	[D3] interrupt_read: No error (-110)
+ 272.123851	[D5] read: (47 bytes) => 28 30 30 30 2e 30 20 30 30 30 2e 30 20 30 30 30 2e 30
+ 272.123978	[D5]  20 30 30 30 20 30 30 2e 30 20 30 2e 30 30 20 30 30 2e 30 20 30 30 30 30 30
+ 272.124013	[D5]  30 30 30 0d
+ 272.124043	[D3] read: (000.0 000.0 000.0 000 00.0 0.00 00.0 00000000
+ 272.124081	[D5] update_status: OL
+ 272.124118	[D5] update_status: !LB
+ 272.124158	[D5] update_status: !CAL
+ 272.124193	[D5] update_status: !FSD
